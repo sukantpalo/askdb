@@ -1,10 +1,10 @@
 import streamlit as st
 import json
 import os
-from utils.openai_helper import nl_to_sql, analyze_schema
-from utils.sql_helper import validate_sql, format_sql
-from utils.schema_helper import parse_schema_text, schema_to_visual
-from examples.sample_schemas import SAMPLE_SCHEMAS
+from askdb.utils.openai_helper import nl_to_sql, analyze_schema
+from askdb.utils.sql_helper import validate_sql, format_sql
+from askdb.utils.schema_helper import parse_schema_text, schema_to_visual
+from askdb.examples.sample_schemas import SAMPLE_SCHEMAS
 
 # Page configuration
 st.set_page_config(
