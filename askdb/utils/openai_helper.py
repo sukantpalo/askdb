@@ -1,4 +1,6 @@
 import os
+from dotenv import load_dotenv
+
 import json
 from openai import OpenAI
 
@@ -7,6 +9,7 @@ from openai import OpenAI
 OPENAI_MODEL = "gpt-4o"
 
 # Initialize OpenAI client
+load_dotenv()
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 openai = OpenAI(api_key=OPENAI_API_KEY)
 
