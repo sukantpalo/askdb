@@ -7,7 +7,7 @@ from openai import OpenAI
 OPENAI_MODEL = "gpt-4o"
 
 # Initialize OpenAI client
-os.environ[OPENAI_API_KEY] = “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”
+os.environ['OPENAI_API_KEY'] = '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'
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 openai = OpenAI(api_key=OPENAI_API_KEY)
 
